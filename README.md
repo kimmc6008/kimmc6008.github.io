@@ -16,3 +16,12 @@ My website:
 <img width="1728" alt="image" src="https://github.com/user-attachments/assets/93bc34de-b24d-4475-8a15-1a46a4d7a56c">
 <img width="1728" alt="image" src="https://github.com/user-attachments/assets/323bf79c-cab6-4052-8c26-b930374d5f12">
 <img width="1728" alt="image" src="https://github.com/user-attachments/assets/ba5397fe-0d7e-444f-9ddc-b0e1e8a560bd">
+
+Activity 3: Screenshot of repo
+<img width="1728" alt="image" src="https://github.com/user-attachments/assets/9c8024f6-b8d7-4dc6-b5ea-fae8e62fa41a">
+
+My website:
+<img width="1728" alt="image" src="https://github.com/user-attachments/assets/98ead10e-132f-4bb0-b8c0-28aecf035a2e">
+<img width="1728" alt="image" src="https://github.com/user-attachments/assets/14a3ce5b-453e-4e57-9c95-a333b0da65a1">
+<img width="1728" alt="image" src="https://github.com/user-attachments/assets/320bf60c-67d2-42ee-9535-a0eeffe9855a">
+<img width="1728" alt="image" src="https://github.com/user-attachments/assets/e0fbc1f0-438c-47fa-8cbf-dbdbf8fdb982">
