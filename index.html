@@ -438,12 +438,12 @@
     </section>
 
     <!-- Fourth Section: Projects -->
-    <section id="projects" class="section scrollspy">
+    <!-- This section is commented out, since it's for Activity 2, and contains static content -->
+    <!-- <section id="projects" class="section scrollspy">
       <h3 class="page-title white-text teal">Projects</h3>
       <div class="container">
         <div class="row">
 
-          <!-- Blue Sky Solar Racing Project -->
           <div class="col s12 m6 l4">
             <div class="card medium">
               <div class="card-image waves-effect waves-block waves-light">
@@ -468,13 +468,11 @@
                   <li><b>Tools:</b> Docker, Web Development</li>
                 </ul>
                 <div class="card-action">
-                  <!-- Add relevant links if available -->
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- Aerospace Team Project -->
           <div class="col s12 m6 l4">
             <div class="card medium">
               <div class="card-image waves-effect waves-block waves-light">
@@ -496,7 +494,6 @@
                   <li><b>Tools:</b> MATLAB, Control System Design</li>
                 </ul>
                 <div class="card-action">
-                  <!-- Add relevant links if available -->
                 </div>
               </div>
             </div>
@@ -523,7 +520,6 @@
                   <li><b>Tools:</b> Django, Python, HTML, CSS, Javascript, VOIP</li>
                 </ul>
                 <div class="card-action">
-                  <!-- Add relevant links if available -->
                 </div>
               </div>
             </div>
@@ -550,7 +546,6 @@
                   <li><b>Tools:</b> OpenCV, Tensorflow</li>
                 </ul>
                 <div class="card-action">
-                  <!-- Add relevant links if available -->
                 </div>
               </div>
             </div>
@@ -577,7 +572,6 @@
                   <li><b>Tools:</b> Django, PostgreSQL, AWS</li>
                 </ul>
                 <div class="card-action">
-                  <!-- Add relevant links if available -->
                 </div>
               </div>
             </div>
@@ -604,7 +598,6 @@
                   <li><b>Tools:</b> QGIS, PostgreSQL</li>
                 </ul>
                 <div class="card-action">
-                  <!-- Add relevant links if available -->
                 </div>
               </div>
             </div>
@@ -631,7 +624,6 @@
                   <li><b>Tools:</b> React, Django</li>
                 </ul>
                 <div class="card-action">
-                  <!-- Add relevant links if available -->
                 </div>
               </div>
             </div>
@@ -658,7 +650,6 @@
                   <li><b>Tools:</b>Tensorflow</li>
                 </ul>
                 <div class="card-action">
-                  <!-- Add relevant links if available -->
                 </div>
               </div>
             </div>
@@ -667,7 +658,21 @@
 
         </div>
       </div>
+    </section> -->
+
+    <!-- New section for recent project, Activity 5 -->
+    <section id="projects" class="section scrollspy">
+      <h3 class="page-title white-text teal">Recent Projects</h3>
+      <div class="container">
+        <!-- where the content comes -->
+        <div id="recent-project" class="row"></div>
+        <div class="center">
+          <button id="load-more-btn" class="btn teal">Load More</button>
+          <button id="collapse-btn" class="btn teal">Collapse</button>
+        </div>
+      </div>
     </section>
+
 
     <!-- Fifth Section: Skills -->
     <section id="skills" class="section scrollspy">
@@ -912,6 +917,169 @@
       })
     })
   </script>
+
+  <!-- Activity 5, dynamic project -->
+  <script>
+    const projects = [
+      {
+        title: "Blue Sky Solar Racing",
+        description: "Software Team Member for the University of Toronto Blue Sky Solar Racing Team.",
+        date: new Date("2023-07-01"),
+        videoSrc: "/assets/video/Blue.mp4",
+        accomplishments: [
+          "Dockerized the codebase.",
+          "Built a website that monitors all the data from the vehicle telemetry."
+        ],
+        tools: "Docker, Web Development",
+      },
+      {
+        title: "UTAT",
+        description: "Worked on the Attitude Determination and Control System for the University of Toronto Aerospace Team.",
+        date: new Date("2019-09-08"),
+        imageSrc: "/assets/video/rocket.gif",
+        accomplishments: [
+          "Conducted general research on the concept of ADCS and different methods used for attitude control.",
+          "Performed detailed research and design on ADCS actuators and attitude control."
+        ],
+        tools: "MATLAB, Control System Design",
+      },
+      {
+        title: "Softeem Emphasis",
+        description: "Worked on the website development of user phone number market.",
+        date: new Date("2020-09-08"),
+        imageSrc: "/assets/video/voip.gif",
+        accomplishments: [
+          "Full stack implementation, frontend and backend.",
+          "Implemented basic features such as: user sign in, sign up, search using API, purchase page, etc."
+        ],
+        tools: "Django, Python, HTML, CSS, Javascript, VOIP",
+      },
+      {
+        title: "UTESCA",
+        description: "Worked on the computer vision client project through UTESCA.",
+        date: new Date("2021-09-08"),
+        imageSrc: "/assets/video/compvis.gif",
+        accomplishments: [
+          "Conducted research about various methods of image classification.",
+          "Performed algorithm implementation and delivered the image classification model."
+        ],
+        tools: "OpenCV, Tensorflow",
+      },
+      {
+        title: "Admin Development",
+        description: "Worked on switching manual user sign-up process to fully automated.",
+        date: new Date("2024-06-30"),
+        imageSrc: "/assets/video/admin.gif",
+        accomplishments: [
+          "Implemented safe sign-up system with interactions with database to enable automation.",
+          "Developed the foundation of client automation in company's database."
+        ],
+        tools: "Django, PostgreSQL, AWS",
+      },
+      {
+        title: "Data Sourcing",
+        description: "Worked on enabling data coverage for the company's database.",
+        date: new Date("2024-08-30"),
+        imageSrc: "/assets/video/data.gif",
+        accomplishments: [
+          "Conducted research about data sourcing.",
+          "Performed thorough data sourcing and implementation to the existing database."
+        ],
+        tools: "QGIS, PostgreSQL",
+      },
+      {
+        title: "UofT Second Hand Hub",
+        description: "Worked on the web development of ECE444 as a Software Lead.",
+        date: new Date("2024-09-18"),
+        imageSrc: "/assets/video/market.gif",
+        accomplishments: [
+          "Team building, planning, and developed the overall architecture of the code."
+        ],
+        tools: "React, Django",
+      },
+      {
+        title: "Image Style Change",
+        description: "Worked on the personal computer vision project.",
+        date: new Date("2024-06-05"),
+        imageSrc: "/assets/video/van.gif",
+        accomplishments: [
+          "Conducted research about image style change.",
+          "Performed algorithm implementation that changes my image in the style of the reference image (van gogh)."
+        ],
+        tools: "Tensorflow",
+      }
+    ];
+  
+    // sort the projects based on the date
+    projects.sort((a, b) => b.date - a.date);
+
+    // I decided to add the date, however, if I just add "project.date" straight to the html, I see this:
+          // Tue Sep 17 2024 20:00:00 GMT-0400 
+    // because that's how Date() stores it.
+    // Made a function to clean it up
+    // format documentation referenced from: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat
+    function formatDate(date) {
+      const options = { year: 'numeric', month: 'long', day: 'numeric' };
+      return new Intl.DateTimeFormat('en-US', options).format(date);
+    }
+  
+    let projectsToShow = 1;
+    function renderProjects() {
+      const recentProject = document.getElementById("recent-project");
+      recentProject.innerHTML = ""; // Clear the container before rendering
+  
+      const projectsToRender = projects.slice(0, projectsToShow);
+  
+      projectsToRender.forEach(project => {
+        const projectHTML = `
+          <div class="col s12 m6 l4">
+            <div class="card medium">
+              <div class="card-image waves-effect waves-block waves-light">
+                ${project.videoSrc ? `<video style="height: 100%; width: 100%" class="activator" autoplay loop muted>
+                  <source src="${project.videoSrc}" type="video/mp4">
+                </video>` : `<img src="${project.imageSrc}" style="height: 100%; width: 100%" class="activator">`}
+              </div>
+              <div class="card-content">
+                <span class="card-title activator teal-text hoverline">${project.title}<i class="mdi-navigation-more-vert right"></i></span>
+                <p>${project.description}</p>
+                <p><b>Date:</b> ${formatDate(project.date)}</p> <!-- Added date here -->
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text"><small>Accomplishments</small><i class="mdi-navigation-close right"></i></span>
+                <ul>${project.accomplishments.map(item => `<li>${item}</li>`).join('')}</ul>
+                <div><b>Tools:</b> ${project.tools}</div>
+              </div>
+            </div>
+          </div>
+        `;
+        recentProject.innerHTML += projectHTML;
+      });
+  
+      // when there's no more, then I disabled this.
+      if (projectsToShow >= projects.length) {
+        document.getElementById('load-more-btn').disabled = true;
+      }
+    }
+  
+    // load more button
+    document.getElementById('load-more-btn').addEventListener('click', function () {
+      projectsToShow += 1;
+      renderProjects();
+    });
+
+    // For fun, I added collapse button to make the projects to show to 1 again.
+    // When the user clicks, it shows the most recent project only.
+    document.getElementById('collapse-btn').addEventListener('click', function () {
+      projectsToShow = 1;
+      renderProjects();
+    });
+  
+    document.addEventListener("DOMContentLoaded", () => {
+      renderProjects();
+    });
+  </script>
+  
+
 </body>
 
 </html>
