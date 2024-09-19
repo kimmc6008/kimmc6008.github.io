@@ -38,3 +38,16 @@ Activity 4: Screenshot of repo
 
 My website:
 <img width="1728" alt="image" src="https://github.com/user-attachments/assets/868a0f75-2fd1-4265-a235-69fe0f77c092">
+
+
+Activity 5: Screenshot of repo
+<img width="1728" alt="image" src="https://github.com/user-attachments/assets/ab084297-c2b5-43d1-87d0-f9e1fe346e0f">
+
+
+My website:
+<img width="1728" alt="image" src="https://github.com/user-attachments/assets/b10a3ade-ddfe-4c79-94c4-7778dd696cdb">
+
+
+When you click one more appear:
+<img width="1728" alt="image" src="https://github.com/user-attachments/assets/1b09f88c-e167-403f-8e0c-468d1c514c30">
+
